@@ -6,12 +6,6 @@ class Navbar extends Component {
   render() {
     this.props.cartUpdated();
 
-    let total = 0;
-
-    this.props.cart.map(
-      (item) => (total += item.product.price * item.quantity)
-    );
-
     return (
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
